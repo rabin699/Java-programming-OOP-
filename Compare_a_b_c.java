@@ -1,3 +1,5 @@
+
+//compariing the three values a,b,c
 import java.util.Scanner;
 
 public class Compare_a_b_c {
