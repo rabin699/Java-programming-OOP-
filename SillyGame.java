@@ -28,6 +28,7 @@ public class SillyGame {
         System.out.println("A " + creature + " appeared and challenged them with a " + puzzle + " to solve");
         System.out.println("Using their " + skill + ", they unlocked the legendary " + noun + " hidden inside.");
         System.out.println("From that moment, " + name + " was known as the " + title + " of the land");
+        scn.close();
 
     }
 }
