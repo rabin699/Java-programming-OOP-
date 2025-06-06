@@ -8,6 +8,7 @@ public class IsPrime {
         Scanner scn = new Scanner(System.in);
         int num, i;
         num = scn.nextInt();
+        scn.close();
         for (i = 2; i <= num / 2; i++) {
             if (num % i == 0) {
                 System.out.println("It is composite");
@@ -15,6 +16,5 @@ public class IsPrime {
             }
         }
         System.out.println("It is prime");
-        scn.close();
     }
 }
