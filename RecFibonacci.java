@@ -1,3 +1,5 @@
+
+//Write a program to generate Fibonacci numbers up to ‘nth’ term using recursive method
 import java.util.Scanner;
 
 public class RecFibonacci {
