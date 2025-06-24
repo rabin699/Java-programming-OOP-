@@ -10,6 +10,7 @@ public class Prime_A2B {
         System.out.print("Enter two numbers:");
         a = scn.nextInt();
         b = scn.nextInt();
+        System.out.printf("The prime numbers between %d and %d are:", a, b);
         scn.close();
         if (a > b) {
             a = a * b;

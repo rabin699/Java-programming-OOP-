@@ -16,7 +16,7 @@ public class L3Q1 {
             sum += array[i];
         }
         scn.close();
-        mean = sum / n;
+        mean = (float) sum / n;
         System.out.printf("The mean of the data is :%.2f", mean);
         int maxCount = 0;
         int mode = 0;

@@ -3,7 +3,7 @@
 import java.util.Scanner;
 
 public class L3Q5 {
-    public static void main() {
+    public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int n;
         System.out.print("Enter the size of the array:");
