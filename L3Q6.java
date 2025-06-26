@@ -6,15 +6,26 @@ import java.util.Scanner;
 public class L3Q6 {
     public static void main(String args[]) {
         Scanner scn = new Scanner(System.in);
-        int n;
-        System.out.print("Enter the size of the array:");
-        n = scn.nextInt();
+        System.out.print("Enter the size of the array: ");
+        int n = scn.nextInt();
+        scn.nextLine(); // consume leftover newline
         String array[] = new String[n];
-        System.out.print("Enter the strings/words in an array:");
+        System.out.println("Enter the strings/words in an array:");
         for (int i = 0; i < n; i++) {
             array[i] = scn.nextLine();
         }
         scn.close();
+
+        bubbleSortStrings(array);
+
+        System.out.println("Arranging in dictionary order....");
+        for (int i = 0; i < n; i++) {
+            System.out.print(array[i] + " ");
+        }
+    }
+
+    public static void bubbleSortStrings(String[] array) {
+        int n = array.length;
         for (int i = 0; i < n - 1; i++) {
             for (int j = 0; j < n - i - 1; j++) {
                 if (array[j].compareTo(array[j + 1]) > 0) {
@@ -23,10 +34,6 @@ public class L3Q6 {
                     array[j + 1] = temp;
                 }
             }
-        }
-        System.out.println("Arranging in ascending order....");
-        for (int i = 0; i < n; i++) {
-            System.out.print(" " + array[i]);
         }
     }
 }
