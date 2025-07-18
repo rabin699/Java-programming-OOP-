@@ -12,7 +12,7 @@ public class RockPaperSissors {
         while (stopper) {
             System.out.print("Enter your choice please (rock, paper, scissors): ");
             userChoice = scn.nextLine().toLowerCase();
-            int choice = ran.nextInt(3); // 0, 1, or 2
+            int choice = ran.nextInt(1, 3); // 0, 1, or 2
             computerChoice = game[choice];
             System.out.println("Computer's choice is: " + computerChoice);
 
