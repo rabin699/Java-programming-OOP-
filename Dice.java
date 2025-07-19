@@ -6,7 +6,7 @@ public class Dice {
                 Scanner scn = new Scanner(System.in);
                 Random ran = new Random();
                 int roll, num, total = 0;
-                System.out.println("How many times you want to roll:");
+                System.out.print("How many times you want to roll:");
                 num = scn.nextInt();
                 scn.close();
                 if (num == 0) {
